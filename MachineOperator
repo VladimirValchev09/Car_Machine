@@ -1,0 +1,34 @@
+
+public class MachineOperator {
+private Machine entity;
+public MachineOperator(Machine entity) {
+	this.entity=entity;
+}
+public Machine getEntity() {
+	return entity;
+}
+public void setEntity(Machine entity) {
+	this.entity = entity;
+}
+public boolean Start() {
+	if(entity.getMachineType().equals("Lorry"))
+	System.out.println("Lorry starting...");
+	if(entity.getMachineType().equals("Car"))
+	System.out.println("Car starting...");
+	return true;
+}
+	public boolean Stop() {
+		if(entity.getMachineType().equals("Lorry"))
+	System.out.println("Lorry stopping...");
+		if(entity.getMachineType().equals("Car"))
+			System.out.println("Car stopping...");
+		return false;
+	}
+	@Override
+	public String toString() {
+		return "MachineOperator [entity=" + entity.getMachineType() + "]";
+	}
+
+}
+
+
