@@ -1,0 +1,19 @@
+
+public class Lorry extends Machine {
+	public Lorry() {
+		super.setMachineType("Lorry");
+	}
+//taka se implementira
+	@Override
+	public boolean Start() {
+	System.out.println("Lorry starting...");
+		return true;
+	}
+
+	@Override
+	public boolean Stop() {
+	System.out.println("Lorry stopping...");
+		return false;
+	}
+
+}
