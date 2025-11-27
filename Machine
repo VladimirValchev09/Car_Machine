@@ -1,0 +1,14 @@
+
+public abstract class Machine {
+private String MachineType;
+
+public String getMachineType() {
+	return MachineType;
+}
+public abstract boolean Start();
+public abstract boolean Stop();
+public void setMachineType(String machineType) {
+	MachineType = machineType;
+}
+
+}
