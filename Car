@@ -1,0 +1,19 @@
+
+public class Car extends Machine {
+	public Car() {
+		super.setMachineType("Car");
+	}
+
+	@Override
+	public boolean Start() {
+	System.out.println("Car starting...");
+		return true;
+	}
+
+	@Override
+	public boolean Stop() {
+	System.out.println("Car stopping...");
+		return false;
+	}
+
+}
